@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+ <link type="text/css" rel="stylesheet" href="ChordCreate.css"/>
+ <title>Selection Screen</title>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+ <!-- midi.js package -->
+<script type="text/javascript" src = "http://code.jquery.com/jquery-2.0.3.min.js"> </script>
+ <script src="./MIDI/js/MIDI/AudioDetect.js" type="text/javascript"></script>
+ <script src="./MIDI/js/MIDI/LoadPlugin.js" type="text/javascript"></script>
+ <script src="./MIDI/js/MIDI/Plugin.js" type="text/javascript"></script>
+ <script src="./MIDI/js/MIDI/Player.js" type="text/javascript"></script>
+ <script src="./MIDI/js/Window/DOMLoader.XMLHttp.js" type="text/javascript"></script>
+ <script src="./MIDI/js/Window/DOMLoader.script.js" type="text/javascript"></script>
+ <!-- extras -->
+ <script src="./MIDI/inc/Base64.js" type="text/javascript"></script>
+ <script src="./MIDI/inc/base64binary.js" type="text/javascript"></script>
+ <script src="chordquery.js" type="text/javascript"></script>
+ <script src="ChordCreate.js" type="text/javascript"></script>
+
+ <script type ="text/javascript">
+ 	function initializeMusic(x) {
+				MIDI.loadPlugin({
+					soundfontUrl: "./MIDI/soundfont/",
+					instrument: [ "acoustic_grand_piano" ],
+					callback: playChord([50, 54, 59], 0)
+				});
+			};
+
+function playMusic() {
+				playChord(
+					[50, 54, 59], 0
+				);
+			}
+
+function playChord(keys, delay) {
+		var midiNotes = [];
+		for (var i = 0; i < keys.length; i++)
+			midiNotes.push(keys[i]);
+		console.log(keys + ' (' + JSON.stringify(midiNotes) + ') ' + delay);
+		MIDI.chordOn(0, midiNotes, 127, delay);
+}
+</script>
+	</head>
+	<body>
+		<div id = "container">
+
+			<div id = "notecontainer">
+				<p> &nbsp; Click on a note to view all the chords that contain that note.</p>
+				<table display = "table-row-group">
+					<div id="A" class="note">A</div>
+					<a href="#" id="Bflat" class="note">B &#9837;</a>
+					<a href="#" id="B" class="note">B</a>
+					<a href="#" id="C" class="note">C</a>
+				</table>
+				<table display = "table-row-group">
+					<a href="#" id="Csharp" class="note">C &#9839;</a>
+					<a href="#" id="D" class="note">D</a>
+					<a href="#" id="Eflat" class="note">E &#9837;</a>
+					<a href="#" id="E" class="note">E</a>
+				</table>
+				<table display = "table-row-group">
+					<a href="#" id="F" class="note">F</a>
+					<a href="#" id="Fsharp" class="note">F &#9839;</a>
+					<a href="#" id="G" class="note">G</a>
+					<a href="#" id="Aflat" class="note">A &#9837;</a>
+				</table>
+			</div>
+			<div id = "chordcontainer">
+				<p> &nbsp; Click on a chord to hear it played.</p>
+				<table display = "table-row-group">
+					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Am</a>
+					<a href="#" class="chord" id = "major1">AM</a>
+				</table>
+				<table display = "table-row-group">
+					<a href="#" class="chord" id="minor2">Cm</a>
+					<a href="#" class="chord" id="major2">CM</a>
+				</table>
+				<table display = "table-row-group">
+					<a href="#" class="chord" id="major3">Em</a>
+					<a href="#" class="chord" id="major3">EM</a>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
