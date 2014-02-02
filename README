@@ -1,0 +1,3 @@
+A web application that allows the user to input a note through its GUI and then generates several different chords that contain the note, all of which play the chords, using a MIDI API, upon being clicked. This app would be extremely useful for the process of arranging music where one often needs construct chords around melodic lines composed of single notes. 
+
+Note: This is a work in progress--the chord playing functionality is not yet done. There is more frontend and backend development pending.
