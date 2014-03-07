@@ -42,6 +42,7 @@ function playChord(keys, delay) {
 }
 </script>
 	</head>
+
 	<body>
 		<div id = "container">
 			<div id = "notecontainer">
@@ -68,106 +69,106 @@ function playChord(keys, delay) {
 			<div id = "chordcontainer1">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="playMidi();">Am</a>
-					<a href="#" class="chord" id = "major1">AM</a>
+					<a href="#" class="chord" id = "minor1" onclick="playMidi(0);">Am</a>
+                    <a href="#" class="chord" id = "major1" onclick="playMidi(1);">AM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Cm</a>
-					<a href="#" class="chord" id="major2">CM</a>
+					<a href="#" class="chord" id="minor2" onclick="playMidi(4);">Cm</a>
+                    <a href="#" class="chord" id="major2" onclick="playMidi(5);">CM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Em</a>
-					<a href="#" class="chord" id="major3">EM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(8);">Em</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(9);">EM</a>
 				</table>
 			</div>
 			<div id = "chordcontainer2">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Bm</a>
-					<a href="#" class="chord" id = "major1">BM</a>
+					<a href="#" class="chord" id = "minor1"onclick="playMidi(2);">Bm</a>
+					<a href="#" class="chord" id = "major1"onclick="playMidi(3);">BM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Dm</a>
-					<a href="#" class="chord" id="major2">DM</a>
+					<a href="#" class="chord" id="minor2"onclick="playMidi(6);">Dm</a>
+					<a href="#" class="chord" id="major2"onclick="playMidi(7);">DM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Fm</a>
-					<a href="#" class="chord" id="major3">FM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(10);">Fm</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(11);">FM</a>
 				</table>
 			</div>
 			<div id = "chordcontainer3">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Cm</a>
-					<a href="#" class="chord" id = "major1">CM</a>
+					<a href="#" class="chord" id = "minor1" onclick="playMidi(4);">Cm</a>
+					<a href="#" class="chord" id = "major1"onclick="playMidi(5);">CM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Em</a>
-					<a href="#" class="chord" id="major2">EM</a>
+					<a href="#" class="chord" id="minor2"onclick="playMidi(8);">Em</a>
+					<a href="#" class="chord" id="major2"onclick="playMidi(9);">EM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Gm</a>
-					<a href="#" class="chord" id="major3">GM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(12);">Gm</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(13);">GM</a>
 				</table>
 			</div>
 			<div id = "chordcontainer4">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Dm</a>
-					<a href="#" class="chord" id = "major1">DM</a>
+					<a href="#" class="chord" id = "minor1" onclick="playMidi(6);">Dm</a>
+					<a href="#" class="chord" id = "major1"onclick="playMidi(7);">DM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Fm</a>
-					<a href="#" class="chord" id="major2">FM</a>
+					<a href="#" class="chord" id="minor2"onclick="playMidi(10);">Fm</a>
+					<a href="#" class="chord" id="major2"onclick="playMidi(11);">FM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Am</a>
-					<a href="#" class="chord" id="major3">AM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(0);">Am</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(1);">AM</a>
 				</table>
 			</div>
 			<div id = "chordcontainer5">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Em</a>
-					<a href="#" class="chord" id = "major1">EM</a>
+					<a href="#" class="chord" id = "minor1" onclick="playMidi(8);">Em</a>
+					<a href="#" class="chord" id = "major1"onclick="playMidi(9);">EM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Gm</a>
-					<a href="#" class="chord" id="major2">GM</a>
+					<a href="#" class="chord" id="minor2"onclick="playMidi(12);">Gm</a>
+					<a href="#" class="chord" id="major2"onclick="playMidi(13);">GM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Bm</a>
-					<a href="#" class="chord" id="major3">BM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(2);">Bm</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(3);">BM</a>
 				</table>
 			</div>
 			<div id = "chordcontainer6">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Fm</a>
-					<a href="#" class="chord" id = "major1">FM</a>
+					<a href="#" class="chord" id = "minor1" onclick="playMidi(10);">Fm</a>
+					<a href="#" class="chord" id = "major1"onclick="playMidi(11);">FM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Am</a>
-					<a href="#" class="chord" id="major2">AM</a>
+					<a href="#" class="chord" id="minor2"onclick="playMidi(0);">Am</a>
+					<a href="#" class="chord" id="major2"onclick="playMidi(1);">AM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Cm</a>
-					<a href="#" class="chord" id="major3">CM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(4);">Cm</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(5);">CM</a>
 				</table>
 			</div>
 			<div id = "chordcontainer7">
 				<p> &nbsp; Click on a chord to hear it played.</p>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id = "minor1" onclick="initializeMusic();">Gm</a>
-					<a href="#" class="chord" id = "major1">GM</a>
+					<a href="#" class="chord" id = "minor1" onclick="playMidi(12);">Gm</a>
+					<a href="#" class="chord" id = "major1"onclick="playMidi(13);">GM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="minor2">Bm</a>
-					<a href="#" class="chord" id="major2">BM</a>
+					<a href="#" class="chord" id="minor2"onclick="playMidi(2);">Bm</a>
+					<a href="#" class="chord" id="major2"onclick="playMidi(3);">BM</a>
 				</table>
 				<table display = "table-row-group">
-					<a href="#" class="chord" id="major3">Dm</a>
-					<a href="#" class="chord" id="major3">DM</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(6);">Dm</a>
+					<a href="#" class="chord" id="major3"onclick="playMidi(7);">DM</a>
 				</table>
 			</div>
 		</div>
