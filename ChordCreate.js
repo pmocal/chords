@@ -26,75 +26,64 @@ function playMidi(note){
 			note2 = new Audio("chordfiles/D4.mp3");
 			note3 = new Audio("chordfiles/Gb4.mp3");
 			break;
-		case 3: //Am
+		case 3: //BM
 			note1 = new Audio("chordfiles/B4.mp3");
 			note2 = new Audio("chordfiles/Eb4.mp3");
 			note3 = new Audio("chordfiles/Gb4.mp3");
 			break;
-		case 4: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 4: //Cm
+			note1 = new Audio("chordfiles/C4.mp3");
+			note2 = new Audio("chordfiles/Eb4.mp3");
+			note3 = new Audio("chordfiles/G4.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 5: //CM
+			note1 = new Audio("chordfiles/C4.mp3");
+			note2 = new Audio("chordfiles/E4.mp3");
+			note3 = new Audio("chordfiles/G4.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 6: //Dm
+			note1 = new Audio("chordfiles/D4.mp3");
+			note2 = new Audio("chordfiles/F4.mp3");
+			note3 = new Audio("chordfiles/A5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 7: //DM
+			note1 = new Audio("chordfiles/D4.mp3");
+			note2 = new Audio("chordfiles/Gb4.mp3");
+			note3 = new Audio("chordfiles/A5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 8: //Em
+			note1 = new Audio("chordfiles/E4.mp3");
+			note2 = new Audio("chordfiles/G4.mp3");
+			note3 = new Audio("chordfiles/B5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 9: //EM
+			note1 = new Audio("chordfiles/E4.mp3");
+			note2 = new Audio("chordfiles/Ab5.mp3");
+			note3 = new Audio("chordfiles/B5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 10: //Fm
+			note1 = new Audio("chordfiles/F4.mp3");
+			note2 = new Audio("chordfiles/Ab5.mp3");
+			note3 = new Audio("chordfiles/C5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 11: //FM
+			note1 = new Audio("chordfiles/F4.mp3");
+			note2 = new Audio("chordfiles/A5.mp3");
+			note3 = new Audio("chordfiles/C5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 12: //Gm
+			note1 = new Audio("chordfiles/G4.mp3");
+			note2 = new Audio("chordfiles/Bb5.mp3");
+			note3 = new Audio("chordfiles/D5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
+		case 13: //GM
+			note1 = new Audio("chordfiles/G4.mp3");
+			note2 = new Audio("chordfiles/B5.mp3");
+			note3 = new Audio("chordfiles/D5.mp3");
 			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
-			break;
-		case 0: //Am
-			note1 = new Audio("chordfiles/A4.mp3");
-			note2 = new Audio("chordfiles/C4.mp3");
-			note3 = new Audio("chordfiles/E4.mp3");
-			break;
-
-
-	snd1.play();
-	snd2.play();
+	note1.play();
+	note2.play();
+	note3.play();
 }
 
 function playMusic() {
