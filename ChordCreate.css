@@ -9,18 +9,36 @@
     left: 0;
 }
 
-
 #chordcontainer {
 	width:500px;
 	height:400px;
 }
+
 #notecontainer {
     z-index: 10;
 }
-
-#chordcontainer{
+#chordcontainer1{
 	display: none;
 }
+#chordcontainer2{
+	display: none;
+}
+#chordcontainer3{
+	display: none;
+}
+#chordcontainer4{
+	display: none;
+}
+#chordcontainer5{
+	display: none;
+}
+#chordcontainer6{
+	display: none;
+}
+#chordcontainer7{
+	display: none;
+}
+
 
 .note {
 	height: 100px;
