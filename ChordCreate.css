@@ -1,17 +1,15 @@
 .musicsymbol {
-	font-size: 6;
+	font-size: 6px;
 }
 
-#notecontainer, 
-#chordcontainer {
-    position: absolute;
-    top: 0;
+#container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#notecontainer {
+	top: 0;
     left: 0;
-}
-
-#chordcontainer {
-	width:500px;
-	height:400px;
 }
 
 #notecontainer {
@@ -41,8 +39,6 @@
 
 
 .note {
-	height: 100px;
-	width: 100px;
 	/*border-radius: 5px;*/
 	-moz-box-shadow:inset 0px 1px 24px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 24px 0px #ffffff;
@@ -71,7 +67,6 @@
 	font-size:24px;
 	font-weight:bold;
 	/*font-style:normal;*/
-	line-height:100px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
@@ -90,8 +85,6 @@
 	}
 
 .chord {
-	height: 100px;
-	width: 204px;
 	/*border-radius: 5px;*/
 	-moz-box-shadow:inset 0px 1px 24px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 24px 0px #ffffff;
@@ -120,7 +113,6 @@
 	font-size:24px;
 	font-weight:bold;
 	/*font-style:normal;*/
-	line-height:100px;
 	text-decoration:none;
 	text-align:center;
 	text-shadow:1px 1px 0px #ffffff;
