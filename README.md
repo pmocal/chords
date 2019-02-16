@@ -8,6 +8,8 @@ A web application that first has users select a note through its GUI then genera
 
 Planning to improve the interface and functionality and clean up the code.
 
+## Screenshot from current version
+
 ![screenshot](screenshot.png)
 
 
