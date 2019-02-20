@@ -6,7 +6,7 @@ A web application that first has users select a note through its GUI then genera
 
 ## Further development plans
 
-Planning to improve the interface and functionality and clean up the code.
+Add diminished and augmented chords. Add circle of fifths with all chords playable. Remove need for chord files and rely entirely on MIDI.js, programatically assigning chord values.
 
 ## Screenshot from current version
 
