@@ -11,6 +11,12 @@ body {
 	display: none;
 }
 
+h1 {
+	font-family: 'Miss Fajardose', cursive;
+	text-align: center;
+	font-size: 2.5em;
+}
+
 div {
 	display: flex;
 	flex-wrap: wrap;
